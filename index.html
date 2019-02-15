@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide current-slide">
+            <img
+              class="carousel__image"
+              src="http://placehold.it/1000x400/e8fffe/38a89d/&text=slide1"
+              alt=""
+            />
+          </li>
+          <li class="carousel__slide">
+            <img
+              class="carousel__image"
+              src="http://placehold.it/1000x400/e6e8ff/5661b3/&text=slide2"
+              alt=""
+            />
+          </li>
+          <li class="carousel__slide">
+            <img
+              class="carousel__image"
+              src="http://placehold.it/1000x400/ffebef/eb5186/&text=slide3"
+              alt=""
+            />
+          </li>
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--left hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8">
+          <circle cx="12" cy="12" r="10" class="primary"></circle>
+          <path
+            class="secondary"
+            d="M13.7 15.3a1 1 0 0 1-1.4 1.4l-4-4a1 1 0 0 1 0-1.4l4-4a1 1 0 0 1 1.4 1.4L10.42 12l3.3 3.3z"
+          ></path>
+        </svg>
+      </button>
+      <button class="carousel__button carousel__button--right">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8">
+          <circle cx="12" cy="12" r="10" class="primary"></circle>
+          <path
+            class="secondary"
+            d="M10.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"
+          ></path>
+        </svg>
+      </button>
+      <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+      </div>
+    </div>
+
+    <script src="carousel.js"></script>
+  </body>
+</html>
